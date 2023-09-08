@@ -1,0 +1,30 @@
+package com.mine.testing;
+
+import java.io.*;
+import java.util.*;
+
+public class test2Again {
+	
+	public static int fked[][];
+	
+	public static int solution() {
+		createBoard();
+	}
+	
+	public static void createBoard() {
+		int right = 8;
+		int down = 8;
+		
+		fked = new int[right][down];
+		
+		int temp = 0;
+		
+		for(int i = 0; i < right; i++) {
+			for(int j = 0; j < down; j++) {
+				fked[i][j] = temp;
+				temp++;
+			}
+		}
+	}
+}
+	 

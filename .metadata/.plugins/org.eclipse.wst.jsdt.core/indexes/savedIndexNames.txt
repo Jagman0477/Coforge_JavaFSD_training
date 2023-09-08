@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\jags0\Documents\Rubble\Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2224781671.index
+4087106033.index
+1788155979.index
+0.index
+2980364754.index

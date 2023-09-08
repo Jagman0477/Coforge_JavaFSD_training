@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;java&apos;&#x0D;&#x0A;- Original project: &apos;Java_training_coforge2023&apos;&#x0D;&#x0A;- Destination element: &apos;java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     WEB-INF&#x0D;&#x0A;     css&#x0D;&#x0A;- Update references to refactored element" description="Move folders" element1="ServletPrj4/src/main/webapp/WEB-INF" element2="ServletPrj4/src/main/webapp/css" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1694145485119" target="/ServletProj1/src/main/java" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userfrom</title>
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body style="background-image:url(image/pattern.avif);">
+    <form action="" class="formTest1" style="width: 35%; margin-left: 31vw;background-color: rgba(240, 248, 255, 0);backdrop-filter: blur(50px); backdrop-filter: opacity: 20%; border-radius: 10px; border: solid 1px; box-shadow: 3px 3px 6px black;">
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input type="text" style="width: 100%;" placeholder="Enter name" name="name" autofocus>
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input type="number"  style="width: 100%;" placeholder="Enter age" name="age">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input type="date" style="width: 100%;"  placeholder="Enter DOB" name="dob">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input type="time" style="width: 100%;"  placeholder="Entery time" name="time">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input type="email" style="width: 100%;"  placeholder="Enter email" name="email">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <label for="" style="color: azure;">Select rank(1 - 10): </label>
+            <input style="width: 100%;"  type="range" name="rank" max="10" min="1">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input  style="width: 100%;"  list="States" placeholder="State name">
+            <datalist id="state">
+                <option value="Bihar">Bihar</option>
+                <option value="UP">UP</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Rajsthan">Rajsthan</option>
+                <option value="Punjab">Punjab</option>
+            </datalist>
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <input style="width: 21vw; height: 28px;"  type="search" name="search" placeholder="Search">
+        </div>
+        <div style="padding-left: 20%;padding-right: 20%;">
+            <audio controls style="width: 100%; color: rgb(95, 95, 95);">
+                <source src="https://file-examples.com/storage/fe235481fb64f1ca49a92b5/2017/11/file_example_MP3_700KB.mp3" type="audio/mp3">
+                Play audio
+            </audio>
+            <video controls style="width: 100%; border-radius: 10px; margin-top: 10px;">
+                <source src="https://file-examples.com/storage/fe235481fb64f1ca49a92b5/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <button type="submit" class="submitBtn" style="height: 35px;">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

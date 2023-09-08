@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        table{
+            width: 60%;
+            background-color: rgb(203, 231, 255);
+            border: solid rgb(0, 114, 0);
+        }
+        th, tr, td{
+            border: solid rgb(0, 114, 0);
+            text-align: center;
+            padding: 10px;
+            margin: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table caption{
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(226, 77, 114);
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        tfoot{
+            color: rgb(196, 66, 99);
+            font-size: large;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <h1 style="color: rgb(0, 114, 0); font-size: 30px; font-weight: 600; font-family: 'Courier New', Courier, monospace;">Table:</h1>
+            <caption>Employees</caption>
+        </thead> 
+        <tbody>
+            <tr>
+                <th rowspan="2">UserId</th>
+                <th colspan="2">Username</th>
+                <th rowspan="2">Salary</th>
+            </tr> 
+            <tr>
+                <th>First name</th>
+                <th>last name</th>
+            </tr>        
+            <tr>
+                <td>10001</td>
+                <td>Dinesh</td>
+                <td>Kumar</td>
+                <td>50000</td>
+            </tr>
+            <tr>
+                <td>10002</td>
+                <td>Rajesh</td>
+                <td>Kumar</td>
+                <td>60000</td>
+            </tr>
+            <tr>
+                <td>10003</td>
+                <td>Gagan</td>
+                <td>Sharma</td>
+                <td>35900</td>
+            </tr>
+            <tr>
+                <td>10004</td>
+                <td>Rajeev</td>
+                <td>Sharma</td>
+                <td>45000</td>
+            </tr>
+            <tr>
+                <td>10005</td>
+                <td>Jaswinder</td>
+                <td>Dhillon</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>10005</td>
+                <td>Reeta</td>
+                <td>Bharadwaj</td>
+                <td>45000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">265900.00</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>

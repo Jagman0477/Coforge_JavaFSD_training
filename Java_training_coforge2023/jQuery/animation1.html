@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dabba{
+            width:25%;
+            height: 50vh;
+            background-color:cornflowerblue;
+            border: solid 4px rgb(66, 26, 26);
+        }
+        .btn{
+            height: 8vh;
+            width: 10vw;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace ;
+        }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <div id="dabba" >
+
+    </div>
+    <div style="display: flex; flex-direction: column; margin-bottom: 5px;">
+            <button id="badaDabba"class="btn">Increase width</button>
+            <button id="lambaDabba" class="btn">Increase height</button>
+            <button id="colorChange" class="btn">Change color</button>
+            <button id="hide" class="btn">Hide box</button>
+            <button id="show" class="btn">Show box</button>
+            <button id="fadeIn" class="btn">Fade out/in</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+            $("#badaDabba").click(() => {
+                $("#dabba").animate({width: "50%"});
+            }) 
+            $("#lambaDabba").click(() => {
+                $("#dabba").animate({height: "70vh"});
+            }) 
+            $("#colorChange").click(() => {
+                $("#dabba").css('background', 'rgb(138, 218, 86)');
+            }) 
+            $("#hide").click(() => {
+                $("#dabba").hide();
+            }) 
+            $("#show").click(() => {
+                $("#dabba").show();
+            }) 
+            $("#fadeIn").click(() => {
+                $("#dabba").fadeOut(500).fadeIn(500);
+            }) 
+    </script>
+</body>
+</html>

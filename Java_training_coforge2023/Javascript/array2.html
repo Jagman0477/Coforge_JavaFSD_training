@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let ar1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let ar2 = [12, 23, 34, 56, 67, 78, 98, 90];
+    let ar3 = ar2.concat(ar1);
+    console.log(ar3);
+    console.log(`This is array2 = ${ar2.join(", ")}`);
+    ar3.pop(); // Removes element in array from last
+    console.log(ar3);
+    ar3.push(999999);
+    console.log(ar3); // Adds element at the end
+    ar3.unshift(123); // Adds element at the start
+    console.log(ar3);
+    ar3.shift(); // Removes element in array from first
+    console.log(ar3);
+    console.log(ar3.reverse()); // Reverses array
+  </script>
+</html>

@@ -1,0 +1,93 @@
+.listClass{
+    border: inset 10px white;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    padding: 10px;
+}
+.listClass2{
+    border: inset 10px white;
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 100px;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    padding: 10px;
+}
+.listClass h1, .listClass h2{
+    text-align: center;
+}
+.listClass2 h1, .listClass2 h2{
+    text-align: center;
+}
+.navLinks a{
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.Image{
+    border-radius: 3%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    object-fit: cover; 
+    height: 100%;
+    width: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Gallery{
+    height: 230px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.formTest1{
+    background-color: azure;
+    width: 50%;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 77);
+    border: solid 2px rgb(0, 0, 77);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 5vh;
+    margin-left: 23vw;
+}
+.submitBtn{
+    margin-top: 20px; 
+    height: 50px; 
+    width: 90px; border: 
+    solid 2px rgb(0, 0, 77); 
+    background-color: antiquewhite; 
+    border-radius: 1vw;
+    font-size: 20px;
+    margin-left: 45%;
+}
+input{
+    width: 22vw;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.formElem{
+    display: flex;
+}
+.formElem label{
+    width: 45%;
+    font-weight: 600;
+}

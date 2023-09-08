@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+.form{
+	width: 30%;
+	background-color: white;
+	margin-left: 30%;
+	border-radius: 7px;
+	padding: 10px;
+	margin-top: 40px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Courier New', Courier, monospace;
+}
+.labelContainer{
+	display: flex;
+	margin-bottom: 10px;
+}
+.labelContainer label{
+	width: 35%;
+}
+.btn{
+	width: 10vw;
+	height: 5vh;
+	border: solid 1px rgb(237, 119, 126);
+	border-radius: 10px;
+	background-color:rgb(177, 252, 197);
+}
+.btnContainer{
+	display: flex;
+	justify-content: space-around;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="id1">
+    Currenlty we are doing jQuery. 
+</div>
+<button id="btn1">Click me</button>
+<input type="number" name="" id="n1">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            alert("Hello world");
+        })
+
+        $(() => {
+            alert("Hello "+$('#id1').text())
+            $('#id1').text(" will learn spring too.")
+        })
+        $(() => {
+            $('#btn1').click(() => {
+                alert("Button is clicked");
+                alert("Number is "+$('#n1').val())
+            })
+        })
+    </script>
+</body>
+</html>

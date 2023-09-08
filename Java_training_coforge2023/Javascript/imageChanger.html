@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(150, 150, 150);">
+        <img id="img" onmouseover="changeImage()" src="https://images.pexels.com/photos/17893700/pexels-photo-17893700/free-photo-of-trees-and-grass.jpeg" style="border: solid 3px rgb(0, 0, 51);margin-top: 5%;margin-left:39%;width: 20%; border-radius: 6px;"  alt="">
+</body>
+<script>
+    function changeImage(){
+        let image = document.getElementById("img");
+        if(image.src == "https://images.pexels.com/photos/17893700/pexels-photo-17893700/free-photo-of-trees-and-grass.jpeg")
+            image.src = "https://images.pexels.com/photos/18024099/pexels-photo-18024099/free-photo-of-tits-on-a-bird-feeder-standing-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        else 
+            image.src = "https://images.pexels.com/photos/17893700/pexels-photo-17893700/free-photo-of-trees-and-grass.jpeg";
+    }
+</script>
+</html>

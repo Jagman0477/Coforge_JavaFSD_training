@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 35%; text-align: center; background-color: rgb(204, 224, 224); color: rgb(61, 61, 61); margin-left: 30%; margin-top: 5%; padding: 3%; border: inset 5px rgb(0, 0, 53);">
+            <h1 id="id1" onclick="changeText()" style="color: rgb(117, 184, 161);">Hello world</h1>
+        <h1 id="id2" style="color: rgb(107, 190, 163);">0</h1>
+        <button onclick="increment()">Increment</button>
+        <button onclick="decrement()">Decrement</button>
+        <h2 id="clock" style="color: rgb(0, 0, 53); font-family: 'Courier New', Courier, monospace; margin-top: 10%;"></h2>
+    </div>
+
+</body>
+<script>
+    let changeText = () => {
+        document.getElementById("id1").innerHTML = "<p style='color: brown'>Welcome to our dynasty</p>"
+    }
+    let increment = () => {
+        let a = parseFloat(document.getElementById("id2").innerText);
+        document.getElementById("id2").innerText = a+1;
+    }
+    let decrement = () => {
+        let a = parseFloat(document.getElementById("id2").innerText);
+        document.getElementById("id2").innerText = a-1;
+    }
+    let clock = () => {
+        let time = new Date().toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(clock, 1000);
+</script>
+</html>

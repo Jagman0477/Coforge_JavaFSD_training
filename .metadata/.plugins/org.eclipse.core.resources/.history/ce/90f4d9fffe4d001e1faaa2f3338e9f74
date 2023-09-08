@@ -1,0 +1,77 @@
+package com.coforge.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+/**
+ * Servlet implementation class EmployeeServlet
+ */
+@WebServlet("/EmployeeServlet")
+public class EmployeeServlet extends HttpServlet {
+
+	Connection conn;
+	Statement st;
+	ResultSet rs;
+	java.sql.ResultSetMetaData metaData;
+	
+	private static final long serialVersionUID = 1L;
+
+	public void init() {
+		try {
+			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/db1", "root", "root");
+			if(conn == null)
+				System.out.println("Connection error");
+			else 
+				System.out.println("Connection successfull");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter res = response.getWriter();
+		res.print("<h1>Employee Data</h1>");
+		
+		try {
+			st = conn.createStatement();
+			rs = st.executeQuery("Select * from employee");
+			
+			metaData = rs.getMetaData();
+			int colCount = metaData.getColumnCount();
+			
+			res.print("<table border='1'>");
+			res.print("<tr>");
+			
+			for(int i=1; i<=colCount; i++) {
+				res.print("<th>"+metaData.getColumnName(i)+"</th>");
+			}
+			res.print("</tr>");
+			
+			while(rs.next()) {
+				res.print("<tr><td>"+rs.getInt(1)+ "</td><td>"+ rs.getString(2)+"</td><td>"+rs.getFloat(3)+"</td></tr>");
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 2%;text-align: center; font-family: 'Courier New', Courier, monospace; color: rgb(9, 78, 9);">Bill Calculator</h1>
+    <div style="margin-left: 24%;width: 40%;background-color: aliceblue;font-family: 'Courier New', Courier, monospace;padding: 5%; border: solid 3px rgb(9, 78, 9); border-radius: 5px; font-size: 20px; font-weight: 600;">
+        <form id="form" action="" style="margin-left: 6%;">
+            <div style="display: flex; margin-bottom: 1.5%;">
+                <label for="" style="width: 35%;">Product name: </label>
+                <input style="  width: 50%;border: solid 2px rgb(9, 78, 9); border-radius: 7px;" id="name" type="text" placeholder="Product name">
+            </div>
+            <div style="display: flex; margin-bottom: 1.5%;">
+                <label for="" style="width: 35%;">Product price: </label>
+                <input style="  width: 50%;border: solid 2px rgb(9, 78, 9); border-radius: 7px;" id="price" type="text" placeholder="Product price">
+            </div>
+            <div style="display: flex; margin-bottom: 1.5%;">
+                <label for="" style="width: 35%;">Product quantity: </label>
+                <input style=" width: 50%;border: solid 2px rgb(9, 78, 9); border-radius: 7px;" id="quantity" type="number" placeholder="Enter quantity">
+            </div>
+            <div style="display: flex; margin-bottom: 1.5%;">
+                <label for="" style="width: 35%;">Total price in rupees: </label>
+                <span  type="text" id="priceTotal"></span>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 35%;"><button onclick="calculatePrice()" style="height: 5vh ;width: 50%; border: solid 2px rgb(9, 78, 9) ;border-radius: 7px;background-color: antiquewhite;">Submit</button></div>
+                
+                <span id="total"></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener("click", (e) => {
+            e.preventDefault();
+        })
+        let calculatePrice = () => {
+            let name = document.getElementById("name").value;
+            let price = parseFloat(document.getElementById("price").value);
+            let quantity = parseFloat(document.getElementById("quantity").value);
+            let totalPrice = price*quantity
+            document.getElementById("priceTotal").innerText = totalPrice;
+            document.getElementById("total").innerText = `${quantity} X ${name} = ${totalPrice}`;
+        }
+    </script>
+</body>
+</html>

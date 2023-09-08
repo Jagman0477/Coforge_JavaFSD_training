@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <p style="margin-left: 600px; color: rgb(255, 153, 0); padding: 20px; font-size: 50px; font-family: 'Courier New', Courier, monospace; text-transform: capitalize;">
+        <b><i><u>HTML training</u></i></b></p>
+        <div style="text-transform: capitalize;color: rgb(255, 153, 0); padding: 20px; font-size: 50px; font-family: 'Courier New', Courier, monospace; ">
+            Javascript training <br>
+            <span style="font-size: 25px;margin-left: 100px;">Water formula: H <sub>2</sub> O</span>
+        </div>
+        <div style="color: rgb(255, 153, 0); padding: 20px; font-size: 50px; font-family: 'Courier New', Courier, monospace; ">
+            jQuery training <br>
+            <span style="font-size: 25px;margin-left: 100px;">(a+b)<sup>2</sup> formula: a <sup>2</sup>+ b<sup>2</sup> + 2ab</span>
+        </div>
+        <div style="text-transform: capitalize;color: rgb(255, 153, 0); padding: 20px; font-size: 50px; font-family: 'Courier New', Courier, monospace; ">
+            HTML 5 training
+            <span style="font-size: 25px; color: white;">
+                &copy;
+                &reg;
+            </span>
+        </div>
+        <div style="color: white;">
+            <pre>
+               public class UserMain {
+
+                public static void main(String[] args) {
+                    
+                    //User u1 = new User(); not possible for singleton class as constructor is private
+                    User u1 = User.getUser();
+                    List&lt;Integer&gt; l1 = new ArrayList&lt;&gt;();
+
+                    u1.setId(1001);
+                    u1.setName("Mahesh Bhatt");
+                    
+                    User u2 = User.getUser();
+                    
+                    u2.setId(1002);
+                    u2.setName("Mahesh Kulkarni");
+                    
+                    System.out.println(u1.getId()+"\t"+u1.getName());
+                    System.out.println(u2.getId()+"\t"+u2.getName());
+                    
+                    //Both are same since they point to the same object that is static in nature
+                }
+                
+            } 
+            </pre>
+        </div>
+</body>
+</html>

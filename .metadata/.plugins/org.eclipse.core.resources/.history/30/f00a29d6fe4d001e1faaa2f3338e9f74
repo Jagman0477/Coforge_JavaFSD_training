@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<context-param>
+		<param-name>country</param-name>
+		<param-value>India</param-value>
+	</context-param>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AccountController</display-name>
+		<servlet-name>AccountController</servlet-name>
+		<servlet-class>com.coforge.controller.AccountController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SavingsAccountPage</display-name>
+		<servlet-name>SavingsAccountPage</servlet-name>
+		<servlet-class>com.coforge.servlet.SavingsAccountPage</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CurrentAccountPage</display-name>
+		<servlet-name>CurrentAccountPage</servlet-name>
+		<servlet-class>com.coforge.servlet.CurrentAccountPage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccountController</servlet-name>
+		<url-pattern>/AccountController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SavingsAccountPage</servlet-name>
+		<url-pattern>/SavingsAccountPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CurrentAccountPage</servlet-name>
+		<url-pattern>/CurrentAccountPage</url-pattern>
+	</servlet-mapping>
+</web-app>

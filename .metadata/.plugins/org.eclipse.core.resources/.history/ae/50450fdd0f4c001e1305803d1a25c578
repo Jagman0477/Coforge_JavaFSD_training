@@ -1,0 +1,51 @@
+package com.mine.testing;
+
+import java.io.*;
+import java.util.*;
+
+public class test2Again {
+	
+	public static int fked[][];
+	
+	public static int solution() {
+		createBoard();
+	}
+	
+	public static void createBoard() {
+		int right = 8;
+		int down = 8;
+		
+		fked = new int[right][down];
+		
+		int temp = 0;
+		
+		for(int i = 0; i < right; i++) {
+			for(int j = 0; j < down; j++) {
+				fked[i][j] = temp;
+				temp++;
+			}
+		}
+	}
+	
+	public static int helper(int a, int b) {
+		if(a >= 0 && a < 8 && b >= 0 && b < 8) {
+			return fked[a][b];
+		}
+		return -1;
+	}
+	
+	public static List<Integer> possibleOutcomes(int loc[]) {
+		List<Integer> l1 = new ArrayList<>();
+		l1.add(helper(loc[0]-2, loc[1]-1));
+		l1.add(helper(loc[0]-1, loc[1]-2));
+		l1.add(helper(loc[0]+1, loc[1]-2));
+		l1.add(helper(loc[0]+2, loc[1]-1));
+		l1.add(helper(loc[0]+2, loc[1]+1));
+		l1.add(helper(loc[0]+1, loc[1]+2));
+		l1.add(helper(loc[0]-1, loc[1]+2));
+		l1.add(helper(loc[0]-2, loc[1]+1));
+		
+		return l1;
+	}
+}
+	 

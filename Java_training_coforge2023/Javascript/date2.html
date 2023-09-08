@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function alarm() {
+      alert("Alarm is ringing.");
+    }
+    // setTimeout(alarm, 4000);
+
+    let clock = function () {
+      console.log(new Date().toLocaleTimeString());
+      setInterval(clock, 1000);
+    };
+
+    clock();
+  </script>
+</html>

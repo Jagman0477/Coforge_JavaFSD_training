@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        form{
+            margin-left: 30%;
+            margin-top: 3%;
+            border: solid 3px rgb(134, 34, 34);
+            background-color: aliceblue;
+            width: 30%;
+            padding: 5%;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form> {
+            display: flex;
+            margin-bottom: 2%;
+        }
+        form div label {
+            width: 35%;
+        }
+        button{
+            border-radius: 5vw;
+            border: solid 2px rgb(129, 33, 33);
+            width: 18%;
+            text-align: center;
+            height: 10%;
+            background-color: antiquewhite;
+            color: rgb(129, 33, 33);
+        }
+    </style>
+</head>
+  <body style="background-color: bisque;">
+    <h1 style="text-align: center; color: rgb(129, 33, 33); font-size: 25px;font-family: 'Courier New', Courier, monospace;">Calculator</h1>
+    <form action="">
+      <div>
+        <label for="">Enter number 1: </label>
+        <input type="number" name="num1" id="num1" />
+      </div>
+      <div>
+        <label for="">Enter number 2: </label>
+        <input type="number" name="num2" id="num2" />
+      </div>
+      <div>
+        <label for="">Enter number 3: </label>
+        <input type="number" name="num3" id="num3" />
+      </div>
+      <div>
+        <button type="button" id="add">Add</button>
+      </div>
+      <div>
+        <button type="button" id="subtract">Subtract</button>
+      </div>
+      <div>
+        <button type="button" id="multiply">Multiply</button>
+      </div>
+      <div>
+        <button type="button" id="divide">Divide</button>
+      </div>
+    </form>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+        
+    $('#add').click(() => {
+        let a = parseFloat($('#num1').val());
+        let b = parseFloat($('#num2').val());
+        if(a<=0 || a=='')
+            alert("Number 1 is blank.")
+        else if(isNaN(a))
+            alert("Number 1 is blank.")
+        else if(b<=0 || b=='')
+            alert("Number 2 is blank.")
+        else if(isNaN(b))
+            alert("Number 2 is blank.")
+        else $('#num3').val(a + b);
+    }) 
+    $('#subtract').click(() => {
+        let a = parseFloat($('#num1').val());
+        let b = parseFloat($('#num2').val());
+        if(a<=0 || a=='')
+            alert("Number 1 is blank.")
+        else if(isNaN(a))
+            alert("Number 1 is blank.")
+        else if(b<=0 || b=='')
+            alert("Number 2 is blank.")
+        else if(isNaN(b))
+            alert("Number 2 is blank.")
+        else $('#num3').val(a - b);
+    })
+    $('#multiply').click(() => {
+        let a = parseFloat($('#num1').val());
+        let b = parseFloat($('#num2').val());
+        if(a<=0 || a=='')
+            alert("Number 1 is blank.")
+        else if(isNaN(a))
+            alert("Number 1 is blank.")
+        else if(b<=0 || b=='')
+            alert("Number 2 is blank.")
+        else if(isNaN(b))
+            alert("Number 2 is blank.")
+        else $('#num3').val(a * b);
+    })
+    $('#divide').click(() => {
+        let a = parseFloat($('#num1').val());
+        let b = parseFloat($('#num2').val());
+        if(a<=0 || a=='')
+            alert("Number 1 is blank.")
+        else if(isNaN(a))
+            alert("Number 1 is blank.")
+        else if(b<=0 || b=='')
+            alert("Number 2 is blank.")
+        else if(isNaN(b))
+            alert("Number 2 is blank.")
+        else $('#num3').val(a / b);
+    })
+
+  </script>
+  </body>
+
+  
+</html>

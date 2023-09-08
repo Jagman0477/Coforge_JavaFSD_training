@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="App1/src/main/java"/>
+	<classpathentry kind="src" path="App2/src/main/java"/>
+	<classpathentry excluding="com/mine/testing/" kind="src" path="CoreJava_Training/src"/>
+	<classpathentry kind="src" path="CoreJava_Training/src/com/mine/testing"/>
+	<classpathentry kind="src" path="ServletPrg2/src/main/java"/>
+	<classpathentry kind="src" path="ServletPrj3/src/main/java"/>
+	<classpathentry kind="src" path="ServletPrj4/src/main/java"/>
+	<classpathentry kind="src" path="ServletProj1/src/main/java"/>
+	<classpathentry kind="lib" path="App1/target/App1-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="App1/target/classes"/>
+</classpath>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class book{
+        constructor(isbn = 8979, bname, bcost){
+            this.isbn = isbn;
+            this.bname = bname;
+            this.bcost = bcost; 
+        }
+
+        set_isbn(val){
+            this.isbn = val;
+        }
+        get_isbn(){
+            return this.isbn;
+        }
+        get_bname(){
+            return this.bname;
+        }
+        set_bname(val){
+            this.bname = val;
+        }
+        get_bcost(){
+            return this.bcost;
+        }
+        set_bcost(val){
+            this.bcost = val;
+        }
+    }
+
+    class scienceBook extends book{
+        constructor(author, isbn, bname, bcost){
+            super(isbn, bcost, bname);
+            this.author = author;
+        }
+        get_Details(){
+            console.log("Book details: \n");
+            console.log("\tBook author: ", this.author);
+            console.log("\tBook ISBN: ", this.get_isbn());
+            console.log("\tBook name: ", this.get_bname());
+            console.log("\tBook cost: ", this.get_bcost());
+        }
+    }
+
+    b1 = new scienceBook("Ishida Sen", 4363, "Tokyo Ghoul", 780.90);
+    b1.get_Details();
+    </script>
+    
+</body>
+</html>

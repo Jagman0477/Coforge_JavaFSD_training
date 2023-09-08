@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 30%;
+            text-align: center;
+            background-color: beige;
+            color: brown;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 35%;
+            margin-top: 10%;      
+            border: solid 3px brown;
+            border-radius: 7px; 
+            padding: 10px;    
+        }
+    </style>
+    <script>
+        setInterval(() => {
+            document.getElementById("id1").innerText = new Date().toLocaleTimeString();
+        }, 1000)
+        Hello = () => {
+            document.getElementById("id2").innerText = new Date().toLocaleDateString();
+        }
+        </script>
+</head>
+<body onload="Hello()">
+    <div class="container">
+        <div id="id1"></div>
+        <div id="id2"></div>
+    </div>
+    
+</body>
+</html>

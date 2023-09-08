@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        hello = (a) => {
+            console.log("Hello again .... "+ a);
+        }
+
+        hello2 = (a, cb) => {
+            console.log("Hello "+a);
+            cb("Welcome, Hehe");
+        }
+
+        hello2("Callback here : ", hello);
+        
+   //====================================
+
+   mydisplay=(a,b)=>{
+    console.log('mydisplay callback later\n addition is '+(a+b))
+   }
+
+   calculator=(n1,n2,callback)=>{
+      console.log('first it  will run')
+      callback(n1,n2)
+   }
+   calculator(11,22,mydisplay)
+
+   // other call back 
+
+   console.log(new Array(11,1,3,2).sort((a,b)=>a-b))
+
+   console.log(new Array(11,12,3,21).filter((a)=>a%3==0))
+   
+   console.log(new Array(11,12,3,21).map((a)=>a*a))
+
+    </script>
+</body>
+</html>

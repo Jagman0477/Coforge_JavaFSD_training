@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar1 = [11,2,22,3,40,4,5];
+        console.log(ar1+" Unsorted");
+        ar1.forEach(a => console.log(a));
+        console.log(ar1.sort((a,b) => (a-b))+" Sorted");
+        console.log(ar1.filter((a) =>(a%2 == 0))+" Sorted divided by 2");
+        console.log(ar1.reduce((sum, a) => sum += a));
+    </script>
+</body>
+</html>l

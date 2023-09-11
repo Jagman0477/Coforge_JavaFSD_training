@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="Hell" class="com.coforge.bean.HelloImplement">
+
+</bean>
+
+<!-- Adding scope = prototype means that bean is no longer singleton -->
+
+<bean id="emp1" class="com.coforge.bean.Employee" scope="prototype">
+	<property name="empId" value="10001"></property>
+	<property name="empName" value="Pankaj Udaas"></property>
+	<property name="empSalary" value="71445.34"></property>
+</bean>
+
+<bean class="com.coforge.bean.User" init-method="init" destroy-method="destroy">
+	<constructor-arg name="userId" value="98234"></constructor-arg>	
+	<constructor-arg name="userName" value="Manglik Mangu"></constructor-arg>
+	<constructor-arg name="userSalary" value="7000.98"></constructor-arg>
+</bean>
+
+</beans>

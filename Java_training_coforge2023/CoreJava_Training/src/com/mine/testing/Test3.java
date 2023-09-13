@@ -1,20 +1,30 @@
 package com.mine.testing;
 
 public class Test3 {
-	 public static void main(String[] args) {
-	        int n = 4; // Number of rows
-	        
-	        // Loop to iterate through each row
-	        for (int i = n; i >= 0; i--) {
-	            int num = i;
-	            
-	            // Loop to print numbers in each row
-	            for (int j = n; j >= i; j--) {
-	                System.out.print(num + " ");
-	                num += j - n; // Calculate the next number
-	            }
-	            
-	            System.out.println(); // Move to the next line after each row
-	        }
-	    }
+
+	public static long solution(int a, int b) {
+	
+		long sum = 1;
+		
+		for(long i = 1; i<b; i++) {
+			sum += i;
+		}
+		
+		long counter = sum+1;
+		
+		for(long i = 1; i<a; i++, counter++) {
+			sum += counter;
+		}
+		
+		return sum;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		long res = solution(4,1);
+		System.out.println(res);
+		
+	}
+	
 }
